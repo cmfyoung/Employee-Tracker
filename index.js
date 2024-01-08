@@ -26,10 +26,7 @@ function onStart() {
             "Add a department",
             "Add a role",
             "Add an employee",
-            "Add a Manager",
             "Update an employee role",
-            "Delete Departments | Roles | Employees",
-            "View the total utilized budget of a department",
             "Exit"
         ],
     })
@@ -57,7 +54,7 @@ function onStart() {
                     updateRole();
                     break;
                 case "Exit":
-                    connection.end();
+                    db.end();
                     console.log("Bye");
                     break;
             }
