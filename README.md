@@ -47,7 +47,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
   ## Installation 
 
- Clone the github repo. Run the application in your command line by typing "Node index.js" to start. 
+ Clone the github repo. This application will require the use of the inquirer package, ensure that you install and use Inquirer version 8.2.4. Use the following command in your project foler: npm i inquirer@8.2.4. Run the application in your command line by typing "Node index.js" to start. 
 
 
   ---
