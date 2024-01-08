@@ -47,14 +47,15 @@ THEN I am prompted to select an employee to update and their new role and this i
 
   ## Installation 
 
-  Yes
+ Clone the github repo. Run the application in your command line by typing "Node index.js" to start. 
 
 
   ---
   
   ## Usage
   
-  Yes
+![Screen Shot 2024-01-08 at 5 25 12 PM](https://github.com/cmfyoung/Employee-Tracker/assets/150183426/c43f6f8f-0e94-4881-9a05-8ddd8b60cb33)
+
 
 
   ## Tests
