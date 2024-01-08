@@ -64,7 +64,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
   ## Credits
   
-  I would like to thank our substitute Eric Sayer and my tutor Dru Sanchez for their assistance in completing this application. 
+  I would like to thank my Teacher Eric Sayer and my tutors Dru Sanchez and Jacob Carver for their assistance in completing this application. 
 
   
   ## License
