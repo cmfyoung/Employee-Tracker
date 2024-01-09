@@ -47,14 +47,15 @@ THEN I am prompted to select an employee to update and their new role and this i
 
   ## Installation 
 
-  Yes
+ Clone the github repo. This application will require the use of the inquirer package, ensure that you install and use Inquirer version 8.2.4. Use the following command in your project foler: npm i inquirer@8.2.4. Run the application in your command line by typing "Node index.js" to start. 
 
 
   ---
   
   ## Usage
   
-  Yes
+![Screen Shot 2024-01-08 at 5 25 12 PM](https://github.com/cmfyoung/Employee-Tracker/assets/150183426/c43f6f8f-0e94-4881-9a05-8ddd8b60cb33)
+
 
 
   ## Tests
@@ -80,7 +81,7 @@ THEN I am prompted to select an employee to update and their new role and this i
   Github Repository : www.github.com/cmfyoung/Employee-Tracker
 
 
-  Website URL : N/A
+  Website URL of Recording : https://drive.google.com/file/d/1yqGNimaMvMUA4X8Zxhd5Jvkk1SjwLe_k/view
 
 
   Author: Chris Young
