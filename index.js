@@ -31,6 +31,7 @@ function onStart() {
         ],
     })
         .then((answer) => {
+            //Perform action based on user's choices
             switch (answer.action) {
                 case "View all departments":
                     viewAllDepartments();
@@ -60,15 +61,19 @@ function onStart() {
             }
         })
 }
+//function to view all departments
 function viewAllDepartments() {
     console.log("viewAllDepartments")
+    //Query the database for all departments and show results
     db.query("SELECT * FROM departments", (err, res) => {
         if (err) throw err;
         console.table(res);
+        //restart the app
         onStart();
     })
 }
 
+//function to view all roles with database query 
 function viewAllRoles() {
     console.log("viewAllRoles")
     db.query("SELECT * FROM roles", (err, res) => {
@@ -77,7 +82,7 @@ function viewAllRoles() {
         onStart();
     })
 }
-
+//function to view all employees with database query 
 function viewAllEmployees() {
     console.log("viewAllEmployees")
     db.query("SELECT * FROM employees", (err, res) => {
@@ -86,8 +91,9 @@ function viewAllEmployees() {
         onStart();
     })
 }
-
+//function to view add Department 
 function addDepartment () {
+    //Prompt user for department name
     inquirer
         .prompt ([
             {
@@ -96,6 +102,7 @@ function addDepartment () {
                 message: "Department Name:"
             }
         ]).then((answer) => {
+            //insert new department into the database and restart the app
             db.query(`INSERT INTO departments (name) VALUES ('${answer.department_name}')`, (err, res) => {
                 if (err) throw err;
                 console.table(res);
@@ -103,7 +110,7 @@ function addDepartment () {
             })
         })
 }
-
+//function to add a role prompt user for details and insert into database
 function addRole () {
     inquirer
         .prompt ([
@@ -130,6 +137,7 @@ function addRole () {
             })
         })
 }
+//function to add an employee prompt user for details and insert into database
 function addEmployee () {
     inquirer
         .prompt ([
@@ -161,6 +169,7 @@ function addEmployee () {
             })
         })
 }
+//function to update a role prompt user for details and insert into database
 function updateRole () {
     inquirer
         .prompt ([
@@ -182,5 +191,5 @@ function updateRole () {
             })
         })
 }
-
+//Start the application 
 onStart()
